@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.utopia</groupId>
+    <artifactId>maven-project01</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <!--  依赖配置  -->
+    <!-- 1.在pom.xml中编写<dependencies>标签
+         2.在<dependencies>标签中使用<dependency>引入坐标
+         3.定义坐标的groupId,artifactId,version
+         4.点击刷新按钮，引入最新加入的坐标
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <!--  排除依赖  不需要指定版本-->
+    <!--  <exclusions>
+            <exclusion>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+            </exclusion>
+           </exclusions>
+     -->
+
+</project>
+
